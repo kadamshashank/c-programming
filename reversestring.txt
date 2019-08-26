@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	int i,j=0,len,t;
+	char str[10];
+	puts("enter ur name");
+	gets(str);
+	len=strlen(str);
+	for(i=0;i<(len/2);i++)
+	{
+		t=str[i];
+		str[i]=str[len-1-i];
+		str[len-1-i]=t;
+
+	}
+	
+	puts(str);
+	_getch();
+	return 0;
+}
