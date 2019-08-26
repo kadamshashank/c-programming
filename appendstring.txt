@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	int i,j,len;
+	char str1[20],str2[20];
+	puts("Enter name 1");
+	gets(str1);
+	puts("Enter name 2");
+	gets(str2);
+     len=strlen(str1);
+	 for(j=0;str2[j]!='\0';j++)
+	 {
+		 str1[len++]=str2[j];
+
+	 }
+		 str1[len]='\0';
+	 puts(str1);
+	 getch();
+	 return 0;
+		
+}
